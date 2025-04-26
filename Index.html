@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devesh Portfolio Website</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7358862361.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Devesh.png" class="logo" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full-Stack AI Developer</p>
+                <h1>Hi, I'm <span>Devesh Verma</span>   </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="DEVESH.jpg" alt="Devesh's Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm Devesh Verma, a tech enthusiast with a strong background in Web Development, Python, Deep
+                        Learning, Machine Learning and Content Writing. I hold 70% score in High School, 60% score in
+                        Inter and 85% in my
+                        B.Sc. IT from Graphic Era
+                        University.A proud NCC & NSS cadet, I’m also a Gold Medalist in Badminton at the All India Air
+                        ForceCommand. I believe in blending discipline, creativity, and technology to build impactful
+                        solutions. Always eager to learn, grow, and take on new challenges.</p>
+                    <div class="tab-title">
+                        <span class="tab-link active-link" onclick="opentab('skills')">Skills</span>
+                        <span class="tab-link" onclick="opentab('education')">Education</span>
+                        <span class="tab-link" onclick="opentab('achievements')">Achievements</span>
+                    </div>
+
+                    <!-- Skills -->
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span>
+                                <ul>
+                                    <li>HTML5</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>PHP</li>
+                                </ul>
+                            </li>
+                            <li><span>Programming Languages</span>
+                                <ul>
+                                    <li>Python</li>
+                                    <li>C++</li>
+                                </ul>
+                            </li>
+                            <li><span>Database & Backend</span>
+                                <ul>
+                                    <li>MySQL</li>
+                                    <li>DBMS</li>
+                                </ul>
+                            </li>
+                            <li><span>Computer Science Fundamentals</span>
+                                <ul>
+                                    <li>Operating System (OS)</li>
+                                    <li>Computer Networks</li>
+                                </ul>
+                            </li>
+                            <li><span>Productivity & Tools</span>
+                                <ul>
+                                    <li>MS Excel</li>
+                                    <li>Google Sheets</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>Graduation</span>
+                                <ul>
+                                    <li><strong>B.Sc. in Information Technology</strong><br>
+                                        Graphic Era University, Dehradun<br>
+                                        Scored: 70% | Year: 2024</li>
+                                </ul>
+                            </li>
+                            <li><span>Senior Secondary Education</span>
+                                <ul>
+                                    <li><strong>Class 12th (CBSE)</strong><br>
+                                        Siddharth Public School<br>
+                                        Scored: 60% | Year: 2021</li>
+                                </ul>
+                            </li>
+                            <li><span>Secondary Education</span>
+                                <ul>
+                                    <li><strong>Class 10th (CBSE)</strong><br>
+                                        Air Force School, Kanpur Cantt<br>
+                                        Scored: 70% | Year: 2019</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Achievements -->
+                    <div class="tab-content" id="achievements">
+                        <ul>
+                            <li><span>Sports</span>
+                                <ul>
+                                    <li>Participated in Badminton Tournament under "All India Air Force Command" (2019)
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><span>NCC</span>
+                                <ul>
+                                    <li>Completed NCC "A" Level Certificate (2019)</li>
+                                </ul>
+                            </li>
+                            <li><span>NSS</span>
+                                <ul>
+                                    <li>Member of NSS all three years of college</li>
+                                    <li>Member of NSS Parade Unit all three years of college</li>
+                                </ul>
+                            </li>
+                            <li><span>Event Organization</span>
+                                <ul>
+                                    <li>Organized Grafest as part of the college organizing committee (all three years)
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------services-------->
+    <div id="services">
+        <div class="container">
+            <hi class="sub-title"> My Services</hi>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-web-awesome"></i>
+                    <h2>Web Development</h2>
+                    <p>
+                        Building modern, responsive websites from scratch using HTML, CSS, JavaScript, and frameworks
+                        like Bootstrap or Tailwind CSS.
+                    <p>
+
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Machine Learning</h2>
+                    <p>
+                        Build custom ML models for tasks like classification, regression, and prediction using
+                        scikit-learn, XGBoost, etc.
+                    <p>
+
+                </div>
+                <div>
+                    <i class="fa-solid fa-hexagon-nodes-bolt"></i>
+                    <h2>Deep Learning</h2>
+                    <p>
+                        Design and train neural networks for image recognition, natural language processing, and
+                        time-series forecasting using frameworks like PyTorch or TensorFlow.
+                    <p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------Portfolio-------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Brain Tumor.jpg">
+                    <div class="layer">
+                        <h3>Brain Tumour Detector</h3>
+                        <p>The main motivation behind Brain tumor detection is to not only detect tumor but it can also
+                            classify types of tumor.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Stock Market.jpg">
+                    <div class="layer">
+                        <h3>Stock Market Predector </h3>
+                        <p>The aim of the project is to examine a number of different forecasting techniques to predict
+                            future stock returns based on past returns and numerical news indicators to construct a
+                            portfolio of multiple stocks in order to diversify the risk.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Screenshot 1.png">
+                    <div class="layer">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>The main motto of a personal portfolio website project is to showcase your skills,
+                            experience, and accomplishments to potential clients, employers, or collaborators.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!----------contact---------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-square-envelope"></i>deveshcode03@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>8187988436</p>
+                    <div class="social-icon">
+                        <a href="https://www.instagram.com/deveshverma._.official?igsh=bmNjamcxajFvMHdp"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/DeveshV95115219?t=JMbBZCVEgK5D2r9dR7SFwg&s=09"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a href="http://wa.me/+91-818-798-8436"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/devesh-verma-87a91b356/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/lucifer-morningstar03"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="Devesh_Resume.pdf" dowload class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name='submit-to-google-sheet'>
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <din class="copyright">
+            <p> Copyright @ Devesh. Made by <i class="fa-solid fa-heart"></i> Devesh Verma</p>
+        </din>
+    </div>
+
+
+
+    <!------Java Script------->
+    <script>
+        const tabLinks = document.querySelectorAll('.tab-link');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        function opentab(tabName) {
+            tabLinks.forEach(link => link.classList.remove('active-link'));
+            tabContents.forEach(content => content.classList.remove('active-tab'));
+
+            document.querySelector(`#${tabName}`).classList.add('active-tab');
+            event.target.classList.add('active-link');
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz6RaxNwkb1wZDY40wYx_pYO1VofzCYc46m_Jl5Ge3H-gAmq25pKCbxG1HXTOjrjHLP/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
